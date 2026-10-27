@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+data/
+figures/out/
+averaged/*.csv
+averaged/*.json
+averaged/*.log
+pil/host
+pil/lt
+pil/*.out
+*.asv
+*.slxc
+slprj/
+results/
+# CCS build outputs and workspace files
+Debug/
+Release/
+*.obj
+*.map
+*.pp
+*.d
+.launches/
+.settings/
+.metadata/
+targetConfigs/
+*.dat

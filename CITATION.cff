@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "RA-GMPPT: reachability-aware global MPPT for buck-type PV-battery chargers"
+authors:
+  - family-names: Do
+    given-names: Thanh Hieu
+    affiliation: "Hung Yen University of Technology and Engineering"
+license: MIT
+repository-code: "https://github.com/dothanhhieukt/RA-GMPPT"
+preferred-citation:
+  type: article
+  title: "A Reachability-Aware Layer for Global MPPT in Buck-Type PV-Battery Chargers Under Partial Shading: A Simulation and Processor-in-the-Loop Study"
+  authors:
+    - family-names: Do
+      given-names: Thanh Hieu
+  journal: "Electronics"
+  year: 2026
