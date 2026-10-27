@@ -196,8 +196,10 @@ def fig13():
     _, _, f180, gm = bd.margins(f, bd.loop(bd.OPS[4][1], f))
     ax[1].annotate('', xy=(fc, -180 + pm), xytext=(fc, -180), arrowprops=dict(arrowstyle='<->', color=CS, lw=0.8))
     ax[1].text(fc * 0.25, -240, 'PM %.0f° (72 V C4, 82 V)' % pm, color=CS, fontsize=7, bbox=dict(fc='white', ec='none', pad=0.5))
-    ax[0].annotate('', xy=(f180, -gm), xytext=(f180, 0), arrowprops=dict(arrowstyle='<->', color=CP, lw=0.9, shrinkA=0, shrinkB=0))
-    ax[0].plot([f180], [-gm], 'o', ms=3.5, mfc='white', mec=CP, mew=0.9, zorder=5)
+    ax[0].plot([f180, f180], [0, -gm], color=CP, lw=1.2, zorder=5)                     # GM: from 0 dB to |L| at -180 deg
+    ax[0].plot([f180 * 0.9, f180 * 1.11], [0, 0], color=CP, lw=1.2, zorder=5)
+    ax[0].plot([f180], [-gm], 'o', ms=3.5, mfc='white', mec=CP, mew=0.9, zorder=6)
+    ax[0].text(f180 * 1.15, -gm / 2, 'GM', color=CP, fontsize=6.3, va='center', ha='left')
     ax[0].plot([f180 * 0.55, f180 * 1.6], [-gm, -gm], color=CP, lw=0.6, ls=':')
     ax[0].text(9.5e3, 36, 'GM %.1f dB (48 V C1, 54 V):\n|L| = −%.1f dB at %.1f kHz' % (gm, gm, f180 / 1e3), color=CP, fontsize=6.3, ha='right', va='top', bbox=dict(fc='white', ec='none', pad=0.5))
     ax[1].plot([f180], [-180], 'o', ms=3.5, mfc='white', mec=CP, mew=0.9, zorder=5)
