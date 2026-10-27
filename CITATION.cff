@@ -7,6 +7,10 @@ authors:
     affiliation: "Hung Yen University of Technology and Engineering"
 license: MIT
 repository-code: "https://github.com/dothanhhieukt/RA-GMPPT"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23684746
+    description: "Zenodo archive of the code and results"
 preferred-citation:
   type: article
   title: "A Reachability-Aware Layer for Global MPPT in Buck-Type PV-Battery Chargers Under Partial Shading: A Simulation and Processor-in-the-Loop Study"

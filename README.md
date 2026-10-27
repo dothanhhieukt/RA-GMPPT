@@ -23,7 +23,7 @@ The repository covers:
 | `pil/` | C implementation of the controller (`pil_ctrl.c`), averaged plant and test harness for the TMS320F28335 (`target_main.c`, linker file), PC builds (`host_main.c`, one-hour profiles `lt_main.c`, `lt_ramp.c`); see `pil/README.md` |
 | `figures/` | `make_figures.py` (all figures of the paper) and the small data files it needs |
 
-Raw results (switched-model result tables and waveforms, averaged-model CSV files, one-hour logs, PIL memory dumps) are archived on Zenodo: https://doi.org/10.5281/zenodo.XXXXXXX. Unpack the archive into `data/`, or set the environment variable `RA_DATA` to its location.
+Raw results (switched-model result tables and waveforms, averaged-model CSV files, one-hour logs, PIL memory dumps) are archived on Zenodo: https://doi.org/10.5281/zenodo.23684746. Unpack the archive into `data/`, or set the environment variable `RA_DATA` to its location.
 
 ## Requirements
 
